@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.example.loginactivity.helper.Constant
 import com.example.loginactivity.helper.PreferencesHelper
 
@@ -15,7 +16,7 @@ class HomePageActivity : AppCompatActivity() {
     private val btnLogout: Button by lazy {
         findViewById(R.id.btn_logout)
     }
-    private val etUsername: EditText by lazy {
+    private val etUsername: TextView by lazy {
         findViewById(R.id.tv_hp_user)
     }
 

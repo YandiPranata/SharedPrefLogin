@@ -6,7 +6,7 @@ import android.content.SharedPreferences
 class PreferencesHelper (context: Context){
 
     private val PREFS_NAME = "login123"
-    private var sharedpref: SharedPreferences
+    private val sharedpref: SharedPreferences
     val editor: SharedPreferences.Editor
 
     init {
@@ -18,8 +18,8 @@ class PreferencesHelper (context: Context){
                 .apply()
         }
 
-        fun getString(key: String) :String?{
-            return sharedpref.getString(key, null)
+        fun getString(key: String) : String {
+            return sharedpref.getString(key, null)?:""
         }
 
         fun put(key: String, value: Boolean){
